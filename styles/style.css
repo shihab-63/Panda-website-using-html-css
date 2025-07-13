@@ -14,13 +14,152 @@
 
 /* CSS Variables */
 :root {
-    --text-color: ;
-    --bg-color: ;
-    --other-color: ;
-    --primary-color: ;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --bg-color: #FFFFFF;
+    --other-color: #F1F1F1;
+    --primary-color: #FF2E80;
 }
 
 body {
     color: var(--text-color);
     background-color: var(--bg-color);
+}
+
+/* Start Repeated Style */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.btn {
+    background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%,rgb(255, 19, 111) 99.994%);
+    padding: 14px 32px;
+    color: var(--white-color);
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 5px;
+    cursor: pointer;
+}
+/* End Repeated Style */
+
+
+/* Header Area Style */
+header {
+    position: relative;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    justify-content: space-between;
+    transition: all .35s ease;
+}
+
+figure {
+
+    cursor: pointer;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    position: relative;
+}
+
+form input {
+    width: 500px;
+    height: 48px;
+    padding: 12px 24px;
+    border-radius: 66px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #1F1F1F;
+    background: var(--other-color);
+}
+
+form i {
+    position: absolute;
+    top: 13px;
+    right: 4%;
+    font-size: 24px;
+    color: #BABABA;
+    cursor: pointer;
+}
+
+form input::placeholder {
+    font-size: 16px;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav_list a {
+    color: #707070;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    transition: all .35s ease;
+}
+
+.nav_list a:hover {
+    color: var(--primary-color);
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FEEAE9;
+    margin-top: 60px;
+    border-radius: 15px;
+    padding: 70px 46px;
+}
+
+.banner_left h1 {
+    color: #1F1F1F;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.banner_left p {
+    color: #4E4E4E;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 450px;
+    margin: 14px 0;
+}
+
+.banner_left h3 {
+    color: var(--primary-color);
+    font-size: 41px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.btn i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.banner_right img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
