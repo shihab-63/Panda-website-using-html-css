@@ -43,6 +43,15 @@ body {
     margin-right: 5px;
     cursor: pointer;
 }
+
+.section_title {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
 /* End Repeated Style */
 
 
@@ -126,6 +135,7 @@ form input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     background: #FEEAE9;
     margin-top: 60px;
     border-radius: 15px;
@@ -162,4 +172,45 @@ form input::placeholder {
     width: 100%;
     max-width: 400px;
     height: auto;
+}
+
+/* Categories Section */
+.categories_sec {
+    margin-top: 64px;
+}
+
+.categories_card_container {
+    display: flex;
+    gap: 26px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 40px 0 80px;
+    border-radius: 10px;
+    background: linear-gradient(151.85deg, rgb(255, 156, 53) 14.537%,rgb(255, 208, 25) 84.486%);
+    flex: 1;
+}
+
+.cards h3 {
+    color: var(--white-color);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.cards img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+.cards:nth-child(2) {
+    background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%,rgb(255, 19, 111) 99.994%);
+}
+
+.cards:nth-child(3) {
+    background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248) 74.29%);
 }
