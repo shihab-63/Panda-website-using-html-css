@@ -10,6 +10,7 @@
     list-style: none;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
+    /* border: 2px solid red; */
 }
 
 /* CSS Variables */
@@ -70,11 +71,39 @@ nav {
     align-items: center;
     backdrop-filter: blur(2px);
     justify-content: space-between;
-    transition: all .35s ease;
+    transition: .35s ease;
+}
+
+.product_li {
+    position: relative;
+}
+
+.dropdown_menu {
+    position: absolute;
+    top: 30%;
+    left: -50px;
+    padding: 5px 0px;
+    text-align: center;
+    width: 170px;
+    border-radius: 0 0 15px 15px;
+    background-color: white;
+    /* visibility: hidden; */
+    opacity: 0;
+    /* border: 2px solid rgb(153, 255, 0); */
+}
+
+.dropdown_menu li {
+    margin: 5px 0;
+}
+
+.product_li:hover .dropdown_menu  {
+    top: 100%;
+    /* visibility: visible; */
+    opacity: 1;
+    transition: .35s ease;
 }
 
 figure {
-
     cursor: pointer;
 }
 
@@ -118,12 +147,12 @@ form input::placeholder {
     gap: 25px;
 }
 
-.nav_list a {
+.nav_list  a {
     color: #707070;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    transition: all .35s ease;
+    transition: .35s ease;
 }
 
 .nav_list a:hover {
