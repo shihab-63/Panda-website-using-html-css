@@ -87,7 +87,7 @@ nav {
     width: 170px;
     border-radius: 0 0 15px 15px;
     background-color: white;
-    /* visibility: hidden; */
+    visibility: hidden;
     opacity: 0;
     /* border: 2px solid rgb(153, 255, 0); */
 }
@@ -98,7 +98,7 @@ nav {
 
 .product_li:hover .dropdown_menu  {
     top: 100%;
-    /* visibility: visible; */
+    visibility: visible;
     opacity: 1;
     transition: .35s ease;
 }
