@@ -205,6 +205,12 @@ form input::placeholder {
     width: 100%;
     max-width: 120px;
     height: auto;
+    cursor: pointer;
+    transition: all .35s ease;
+}
+
+.cards img:hover {
+    transform: scale(1.08);
 }
 
 .cards:nth-child(2) {
@@ -213,4 +219,84 @@ form input::placeholder {
 
 .cards:nth-child(3) {
     background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248) 74.29%);
+}
+
+
+/* shoes_backpack_sec */
+.shoes_backpack_sec {
+    background: #F4F4F4;
+}
+
+.section_title_card {
+    padding: 50px 0;
+}
+
+.section_title_card h4 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1F1F1F;
+}
+
+.section_title_card p {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.shoes_backpack_parant {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 80px;
+}
+
+.section_title_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shoes_card {
+    background-color: var(--bg-color);
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+    cursor: pointer;
+    transition: all .35s ease;
+}
+
+
+.shoes_card img {
+    width: 100%;
+    max-width: 336px;
+    transition: all .35s ease;
+    height: auto;
+}
+
+.shoes_card img:hover {
+    transform: scale(1.02);
+}
+
+.shoes_card h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.shoes_card p {
+    color: #4E4E4E;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.shoes_card h4 {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.shoes_card .btn {
+    background: #000000;
 }
