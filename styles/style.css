@@ -300,3 +300,41 @@ form input::placeholder {
 .shoes_card .btn {
     background: #000000;
 }
+
+/* contact_us_sec */
+.contact_us_sec {
+    background-color: #FFF2F1;
+    text-align: center;
+    padding: 100px 150px;
+    margin: 75px auto;
+}
+
+.contact_us_sec h2 {
+    color: #1F1F1F;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact_us_sec p {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact_input {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact_input .btn {
+    border-radius: 0 10px 10px 0;
+}
+
+.contact_us_sec input {
+    width: 400px;
+    border: none;
+    padding: 20px 32px;
+    border-radius: 10px 0 0 10px;
+}
